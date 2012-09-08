@@ -37,6 +37,7 @@ end
 
 task :release => :build do
   system "gem push #{Kekkan::APP_NAME}-#{Kekkan::VERSION}.gem"
+  puts "#{Kekkan::APP_NAME} a CVE / CPE XML parser / database; Just released #{Kekkan::VERSION}. More info at #{Kekkan::SITE}"
 end
 
 task :clean do
