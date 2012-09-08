@@ -26,5 +26,17 @@
 
 module Kekkan
 	APP_NAME = "kekkan"
-	VERSION = "0.0.0"
+	VERSION = "0.0.1"
+	AUTHOR = "Arxopia LLC."
+	EMAIL = "kekkan@arxopia.com"
+	SITE = "http:://www.arxopia.com/projects/kekkan"
 end
+
+require 'optparse'
+require 'irb'
+
+require 'nokogiri'
+
+require 'kekkan/base'
+#require 'kekkan/cli'
+#require 'kekkan/parsers'
