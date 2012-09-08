@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<nvd nvd_xml_version="2.0" pub_date="2012-07-10T16:00:00" xmlns="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://scap.nist.gov/schema/patch/0.1 http://nvd.nist.gov/schema/patch_0.1.xsd http://scap.nist.gov/schema/scap-core/0.1 http://nvd.nist.gov/schema/scap-core_0.1.xsd http://scap.nist.gov/schema/feed/vulnerability/2.0 http://nvd.nist.gov/schema/nvd-cve-feed_2.0.xsd">
+
+  <entry id="CVE-2011-2485">
+    <vuln:vulnerable-configuration id="http://nvd.nist.gov/">
+      <cpe-lang:logical-test negate="false" operator="OR">
+        <cpe-lang:fact-ref name="cpe:/a:gnome:gdk-pixbuf:2.23.3"/>
+        <cpe-lang:fact-ref name="cpe:/a:gnome:gdk-pixbuf:2.22.1"/>
+      </cpe-lang:logical-test>
+    </vuln:vulnerable-configuration>
+
+    <vuln:vulnerable-software-list>
+      <vuln:product>
+        cpe:/a:gnome:gdk-pixbuf:2.23.3
+      </vuln:product>
+      <vuln:product>
+        cpe:/a:gnome:gdk-pixbuf:2.22.1
+      </vuln:product>
+    </vuln:vulnerable-software-list>
+
+    <vuln:cve-id>
+      CVE-2011-2485
+    </vuln:cve-id>
+
+    <vuln:published-datetime>
+      2012-07-03T12:40:29.677-04:00
+    </vuln:published-datetime>
+
+    <vuln:last-modified-datetime>
+      2012-07-03T00:00:00.000-04:00
+    </vuln:last-modified-datetime>
+
+    <vuln:cvss>
+      <cvss:base_metrics>
+        <cvss:score>
+          4.3
+        </cvss:score>
+        <cvss:access-vector>
+          NETWORK
+        </cvss:access-vector>
+        <cvss:access-complexity>
+          MEDIUM
+        </cvss:access-complexity>
+        <cvss:authentication>
+          NONE
+        </cvss:authentication>
+        <cvss:confidentiality-impact>
+          NONE
+        </cvss:confidentiality-impact>
+        <cvss:integrity-impact>
+          NONE
+        </cvss:integrity-impact>
+        <cvss:availability-impact>
+          PARTIAL
+        </cvss:availability-impact>
+        <cvss:source>
+          http://nvd.nist.gov
+        </cvss:source>
+        <cvss:generated-on-datetime>
+          2012-07-03T12:57:00.000-04:00
+        </cvss:generated-on-datetime>
+      </cvss:base_metrics>
+    </vuln:cvss>
+
+    <vuln:references reference_type="PATCH" xml:lang="en">
+      <vuln:source>
+        CONFIRM
+      </vuln:source>
+
+      <vuln:reference href="http://git.gnome.org/browse/gdk-pixbuf/commit/?id=f8569bb13e2aa1584dde61ca545144750f7a7c98" xml:lang="en">
+http://git.gnome.org/browse/gdk-pixbuf/commit/?id=f8569bb13e2aa1584dde61ca545144750f7a7c98
+      </vuln:reference>
+    </vuln:references>
+
+    <vuln:references reference_type="UNKNOWN" xml:lang="en">
+      <vuln:source>
+        GENTOO
+      </vuln:source>
+      <vuln:reference href="http://security.gentoo.org/glsa/glsa-201206-20.xml" xml:lang="en">
+        GLSA-201206-20
+      </vuln:reference>
+    </vuln:references>
+    <vuln:references reference_type="VENDOR_ADVISORY" xml:lang="en">
+      <vuln:source>
+        SECUNIA
+      </vuln:source>
+      <vuln:reference href="http://secunia.com/advisories/49715" xml:lang="en">
+        49715
+      </vuln:reference>
+    </vuln:references>
+    <vuln:references reference_type="VENDOR_ADVISORY" xml:lang="en">
+      <vuln:source>
+        SECUNIA
+      </vuln:source>
+      <vuln:reference href="http://secunia.com/advisories/45656" xml:lang="en">
+        45656
+      </vuln:reference>
+    </vuln:references>
+    <vuln:references reference_type="UNKNOWN" xml:lang="en">
+      <vuln:source>
+        CONFIRM
+      </vuln:source>
+      <vuln:reference href="http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.23/gdk-pixbuf-2.23.5.news" xml:lang="en">
+http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.23/gdk-pixbuf-2.23.5.news
+      </vuln:reference>
+    </vuln:references>
+    <vuln:summary>
+The gdk_pixbuf__gif_image_load function in gdk-pixbuf/io-gif.c in gdk-pixbuf before 2.23.5 does not properly handle certain return values, which allows remote attackers to cause a denial of service (memory consumption) via a crafted GIF image file.
+    </vuln:summary>
+  </entry>
+</nvd>
