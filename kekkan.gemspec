@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
 	s.version = Kekkan::VERSION
 	s.homepage = "http://www.hammackj.com/projects/kekkan"
 	s.summary = "#{Kekkan::APP_NAME}"
-	s.description = "#{Kekkan::APP_NAME} is a set of parsers for NVD CVE / CPE xml files"
+	s.description = "#{Kekkan::APP_NAME} is a parser and database for NVD CVE and CPE XML files."
 	s.license = "BSD"
 
 	s.author = "Jacob Hammack"
