@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2012 Arxopia LLC.
+# Copyright (c) 2012 Arxopia LLC.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -24,10 +24,26 @@
 #OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 #OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#Cool random banner stuff for the CLI, based on the Metasploit random banner concept
+
 module Kekkan
 	module CLI
+		module Banner
+			Banners =
+				[
+'
+ _        _    _
+| | _____| | _| | ____ _ _ __
+| |/ / _ \ |/ / |/ / _` | \'_ \
+|   <  __/   <|   < (_| | | | |
+|_|\_\___|_|\_\_|\_\__,_|_| |_|
+
+'
+				]
+
+			def self.to_s
+				Banners[rand(Banners.length)]
+			end
+		end
 	end
 end
-
-require 'kekkan/cli/application'
-require 'kekkan/cli/banner'

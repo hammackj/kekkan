@@ -30,6 +30,6 @@ If you would like to contribute bug fixes/etc to Kekkan. The easiest way is to f
 If you have any problems, bugs or feature requests please use the [github issue tracker](http://github.com/arxopia/kekkan/issues).
 
 # Contact
-You can reach me at kekkan[at]arxopia[dot]com.
+You can reach the team at kekkan[at]arxopia[dot]com.
 
-You can also contact me on IRC as hammackj on irc.freenode.net, #risu
+You can also contact the team on IRC on irc.freenode.net, #risu

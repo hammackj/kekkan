@@ -30,13 +30,20 @@ module Kekkan
 	AUTHOR = "Arxopia LLC."
 	EMAIL = "kekkan@arxopia.com"
 	SITE = "http:://www.arxopia.com/projects/kekkan"
+	CONFIG_FILE = "./kekkan.cfg"
 end
 
+require 'rails'
+require 'active_record'
+require "active_support"
 require 'optparse'
 require 'irb'
-
+require 'yaml'
 require 'nokogiri'
 
 require 'kekkan/base'
-#require 'kekkan/cli'
-#require 'kekkan/parsers'
+require 'kekkan/cli'
+require 'kekkan/models'
+require 'kekkan/parsers'
+
+include Kekkan::Models

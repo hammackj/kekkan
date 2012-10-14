@@ -33,13 +33,13 @@ require 'kekkan'
 Gem::Specification.new do |s|
 	s.name = "#{Kekkan::APP_NAME}"
 	s.version = Kekkan::VERSION
-	s.homepage = "http://www.hammackj.com/projects/kekkan"
+	s.homepage = "http://www.arxopia.com/projects/kekkan"
 	s.summary = "#{Kekkan::APP_NAME}"
-	s.description = "#{Kekkan::APP_NAME} is a parser and database for NVD CVE and CPE XML files."
+	s.description = "#{Kekkan::APP_NAME} is an SAX XML parser and database for NVD CVE and CPE XML files."
 	s.license = "BSD"
 
 	s.author = "Jacob Hammack"
-	s.email = "jacob.hammack@arxopia.com"
+	s.email = "kekkan@arxopia.com"
 
 	s.files	= Dir['[A-Z]*'] + Dir['lib/**/*'] + ['kekkan.gemspec']
 	s.bindir = "bin"
@@ -51,9 +51,6 @@ Gem::Specification.new do |s|
 	s.required_rubygems_version = ">= 1.8.24"
 	s.rubyforge_project	= "#{Kekkan::APP_NAME}"
 
-	#s.add_development_dependency("simplecov", [">= 0.9.9"])
-	#s.add_development_dependency("yard", [">= 0.6.4"])
-
-	#s.add_dependency('rails', ['>= 3.0.7'])
-	#s.add_dependency('libxml-ruby', ['>= 1.1.4'])
+	s.add_dependency('rails', ['>= 3.8.7'])
+	s.add_dependency('nokogiri', ['>= 1.5.5'])
 end

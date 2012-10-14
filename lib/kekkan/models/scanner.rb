@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2012 Arxopia LLC.
+# Copyright (c) 2012 Arxopia LLC.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -25,9 +25,11 @@
 #OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Kekkan
-	module CLI
+	module Models
+
+		# Scanner Model
+		class Scanner < ActiveRecord::Base
+			belongs_to :entry
+		end
 	end
 end
-
-require 'kekkan/cli/application'
-require 'kekkan/cli/banner'

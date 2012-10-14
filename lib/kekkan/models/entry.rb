@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2012 Arxopia LLC.
+# Copyright (c) 2012 Arxopia LLC.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -25,9 +25,15 @@
 #OF THE POSSIBILITY OF SUCH DAMAGE.
 
 module Kekkan
-	module CLI
+	module Models
+
+		#Entry Model
+		class Entry < ActiveRecord::Base
+			has_many :cvsses
+			has_many :references
+			has_many :vulnerable_software_lists
+			belongs_to :assessment_check
+			has_many :scanners
+		end
 	end
 end
-
-require 'kekkan/cli/application'
-require 'kekkan/cli/banner'
