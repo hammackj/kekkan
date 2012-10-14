@@ -67,7 +67,7 @@ module Kekkan
 				create_table :references do |t|
 					t.integer :entry_id
 					t.string :source
-					t.string :type
+					t.string :ref_type
 					t.string :reference
 					t.string :href
 					t.string :language

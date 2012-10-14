@@ -78,6 +78,20 @@ module Kekkan
 						@entry.attributes = { :cwe => Hash[attributes]["id"] }
 						@entry.save
 
+					when "vuln:references"
+						@reference = @entry.references.create
+						@reference.attributes = {
+							:ref_type => Hash[attributes]["reference_type"]
+						}
+						@reference.save
+
+					when "vuln:reference"
+						@reference.attributes = {
+							:href => Hash[attributes]["href"],
+							:language => Hash[attributes]["xml:lang"]
+						}
+						@reference.save
+
 					when "vuln:assessment_check "
 						@ass = @entry.assessment_check.create
 						@ass.attributes = {
@@ -95,20 +109,6 @@ module Kekkan
 							:system => Hash[attributes]["system"]
 						}
 						@scanner.save
-
-					when "vuln:references"
-						@reference = @entry.references.create
-						@reference.attributes = {
-							:type => Hash[attributes]["reference_type"]
-						}
-						@reference.save
-
-					when "vuln:reference"
-						@reference.attributes = {
-							:href => Hash[attributes]["href"],
-							:language => Hash[attributes]["xml:lang"]
-						}
-						@reference.save
 				end
 			end
 

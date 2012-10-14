@@ -22,6 +22,27 @@ Kekkan relies heavily on [RubyGems](http://rubygems.org/) to install other depen
 Installation is really easy just gem install!
 
 	% gem install kekkan
+	
+## Database Setup
+
+	% kekkan --create-config
+	% $EDITOR kekkan.cfg
+	% kekkan --create-tables
+
+1. Generate the kekkan.cfg file.
+2. Edit the kekkan.cfg file, filling in the variables as needed.
+3. Migrate the database schema.
+
+## Parsing NVD CVE XML
+
+	% kekkan nvdcve-2.0-2012.xml [nvdcve-2.0-2011.xml ...]
+
+1. Parse the files by passing their names on the command line.
+
+# Viewing Data
+The data can be queried with a built in console or with an external database viewer. The data is mostly for consumption from another program.
+
+	% kekkan --console
 
 # Contributing
 If you would like to contribute bug fixes/etc to Kekkan. The easiest way is to fork the project on [github](http://github.com/arxopia/kekkan) and make the changes in your fork and the submit a pull request to the project.
