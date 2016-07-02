@@ -20,9 +20,9 @@
 
 module Kekkan
 	APP_NAME = "kekkan"
-	VERSION = "0.0.3"
+	VERSION = "0.0.4"
 	AUTHOR = "Jacob Hammack"
 	EMAIL = "jacob.hammack@arxopia.com"
-	SITE = "http:://arxopia.github.io/kekkan"
+	SITE = "http://arxopia.github.io/kekkan"
 	CONFIG_FILE = "./kekkan.cfg"
 end

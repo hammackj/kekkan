@@ -1,5 +1,9 @@
 # News
 
+# 0.0.4 (July 2, 2016)
+- License change to MIT
+- Copyright updates
+
 #0.0.1 (October 13, 2012)
 - Added schema and SAX XML parser for NVD CVE v2 XML format
 - SQLite is very slow on large XML files, I recommend using MySql
