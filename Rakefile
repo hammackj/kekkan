@@ -20,18 +20,31 @@
 
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
-require 'rubygems'
-require "kekkan"
+require "kekkan/version"
 require 'rake'
 require 'rake/testtask'
 
 task :build do
-  system "gem build #{Kekkan::APP_NAME}.gemspec"
+	system "gem build #{Kekkan::APP_NAME}.gemspec"
 end
 
-task :release => :build do
-  system "gem push #{Kekkan::APP_NAME}-#{Kekkan::VERSION}.gem"
-  puts "#{Kekkan::APP_NAME} a NVD CVE XML parser / database; Just released #{Kekkan::VERSION}. More info at #{Kekkan::SITE}"
+task :tag_and_bag do
+	system "git tag -a v#{Kekkan::VERSION} -m 'version #{Kekkan::VERSION}'"
+	system "git push --tags"
+	system "git checkout master"
+	system "git merge dev"
+	system "git push"
+end
+
+task :push do
+	system "gem push #{Kekkan::APP_NAME}-#{Kekkan::VERSION}.gem"
+end
+
+task :tweet do
+	puts "Just released #{Kekkan::APP_NAME} v#{Kekkan::VERSION}. #{Kekkan::APP_NAME} is an Nessus XML parser/database/report generator. More information at #{Kekkan::SITE}"
+end
+
+task :release => [:tag_and_bag, :build, :push, :tweet] do
 end
 
 task :clean do
