@@ -1,10 +1,8 @@
-#Kekkan
+#Kekkan [![Gem Version](https://badge.fury.io/rb/risu.png)](http://badge.fury.io/rb/risu) [![Build Status](https://travis-ci.org/arxopia/risu.png?branch=master)](https://travis-ci.org/arxopia/risu)  [![Code Climate](https://codeclimate.com/github/arxopia/risu/badges/gpa.svg)](https://codeclimate.com/github/arxopia/risu) [![Inline docs](http://inch-ci.org/github/arxopia/risu.png)](http://inch-ci.org/github/arxopia/risu) 
 
 Kekkan is a parser and [ActiveRecord](http://api.rubyonrails.org/classes/ActiveRecord/Base.html) database for NVD CVE and CPE XML files.
 
 The name comes from the Japanese word for 'flaw/defect'.
-
-Version **0.0.1** is the current release.
 
 # Requirements
 
@@ -22,7 +20,7 @@ Kekkan relies heavily on [RubyGems](http://rubygems.org/) to install other depen
 Installation is really easy just gem install!
 
 	% gem install kekkan
-	
+
 ## Database Setup
 
 	% kekkan --create-config
