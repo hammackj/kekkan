@@ -21,19 +21,18 @@
 base = __FILE__
 $:.unshift(File.join(File.dirname(base), 'lib'))
 
-require 'rubygems'
-require 'kekkan'
+require 'kekkan/version'
 
 Gem::Specification.new do |s|
 	s.name = "#{Kekkan::APP_NAME}"
 	s.version = Kekkan::VERSION
-	s.homepage = "http://www.arxopia.com/projects/kekkan"
+	s.homepage = Kekkan::SITE
 	s.summary = "#{Kekkan::APP_NAME}"
 	s.description = "#{Kekkan::APP_NAME} is an SAX XML parser and database for NVD CVE and CPE XML files."
-	s.license = "BSD"
+	s.license = "MIT"
 
-	s.author = "Jacob Hammack"
-	s.email = "kekkan@arxopia.com"
+	s.author = Kekkan::AUTHOR
+	s.email = Kekkan::EMAIL
 
 	s.files	= Dir['[A-Z]*'] + Dir['lib/**/*'] + ['kekkan.gemspec']
 	s.bindir = "bin"
@@ -42,7 +41,6 @@ Gem::Specification.new do |s|
 	s.has_rdoc = 'yard'
 	s.extra_rdoc_files = ["README.markdown", "LICENSE"]
 
-	s.required_rubygems_version = ">= 1.8.24"
 	s.rubyforge_project	= "#{Kekkan::APP_NAME}"
 
 	s.add_dependency('rails', ['>= 3.8.7'])
