@@ -1,4 +1,4 @@
-#Kekkan [![Gem Version](https://badge.fury.io/rb/kekkan.png)](http://badge.fury.io/rb/kekkan) [![Build Status](https://travis-ci.org/arxopia/kekkan.png?branch=master)](https://travis-ci.org/arxopia/kekkan)  [![Code Climate](https://codeclimate.com/github/arxopia/kekkan/badges/gpa.svg)](https://codeclimate.com/github/arxopia/kekkan) [![Inline docs](http://inch-ci.org/github/arxopia/kekkan.png)](http://inch-ci.org/github/arxopia/kekkan)
+#Kekkan [![Gem Version](https://badge.fury.io/rb/kekkan.png)](http://badge.fury.io/rb/kekkan) [![Build Status](https://travis-ci.org/arxopia/kekkan.png?branch=master)](https://travis-ci.org/arxopia/kekkan)  [![Code Climate](https://codeclimate.com/github/arxopia/kekkan/badges/gpa.svg)](https://codeclimate.com/github/arxopia/kekkan) [![Inline docs](http://inch-ci.org/github/arxopia/kekkan.svg?branch=master)](http://inch-ci.org/github/arxopia/kekkan)
 
 Kekkan is a parser and [ActiveRecord](http://api.rubyonrails.org/classes/ActiveRecord/Base.html) database for NVD CVE and CPE XML files.
 
