@@ -1,0 +1,18 @@
+language: ruby
+
+sudo: false
+
+rvm:
+  - 2.2.4
+  - 2.3.0
+
+gemfile:
+  - Gemfile
+
+notifications:
+  email:
+    - jacob.hammack@arxopia.com
+  irc: "irc.freenode.org#risu"
+
+before_install:
+  - gem --version
