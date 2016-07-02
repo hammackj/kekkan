@@ -43,6 +43,6 @@ Gem::Specification.new do |s|
 
 	s.rubyforge_project	= "#{Kekkan::APP_NAME}"
 
-	s.add_dependency('rails', ['>= 3.8.7'])
-	s.add_dependency('nokogiri', ['>= 1.5.5'])
+	s.add_runtime_dependency 'rails', '~> 4.2', '>= 4.2.6'
+	s.add_runtime_dependency 'nokogiri', '~> 1.6', '>= 1.6.8'
 end
