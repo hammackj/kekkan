@@ -19,20 +19,10 @@
 # THE SOFTWARE.
 
 module Kekkan
+	APP_NAME = "kekkan"
+	VERSION = "0.0.2"
+	AUTHOR = "Jacob Hammack"
+	EMAIL = "jacob.hammack@arxopia.com"
+	SITE = "http:://arxopia.github.io/kekkan"
+	CONFIG_FILE = "./kekkan.cfg"
 end
-
-require 'rails'
-require 'active_record'
-require "active_support"
-require 'optparse'
-require 'irb'
-require 'yaml'
-require 'nokogiri'
-
-require 'kekkan/base'
-require 'kekkan/base'
-require 'kekkan/cli'
-require 'kekkan/models'
-require 'kekkan/parsers'
-
-include Kekkan::Models
