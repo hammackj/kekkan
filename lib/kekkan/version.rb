@@ -20,7 +20,7 @@
 
 module Kekkan
 	APP_NAME = "kekkan"
-	VERSION = "0.0.4"
+	VERSION = "0.0.5"
 	AUTHOR = "Jacob Hammack"
 	EMAIL = "jacob.hammack@arxopia.com"
 	SITE = "http:://arxopia.github.io/kekkan"
