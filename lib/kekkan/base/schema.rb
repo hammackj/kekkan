@@ -22,7 +22,7 @@ module Kekkan
 	module Base
 
 		# Kekkan database Schema
-		class Schema < ActiveRecord::Migration
+		class Schema < ActiveRecord::Migration[4.2]
 
 			# Creates all of the database tables required by the parser
 			#
