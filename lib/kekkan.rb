@@ -29,6 +29,7 @@ require 'irb'
 require 'yaml'
 require 'nokogiri'
 
+require 'kekkan/version'
 require 'kekkan/base'
 require 'kekkan/base'
 require 'kekkan/cli'
