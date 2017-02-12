@@ -35,7 +35,7 @@ module Kekkan
 			end
 
 			#
-			def create_config(file=CONFIG_FILE)
+			def create_config file=CONFIG_FILE
 				File.open(file, 'w+') do |f|
 					f.write("database:\n")
 					f.write("  adapter: \n")
@@ -49,7 +49,7 @@ module Kekkan
 			end
 
 			#
-			def load_config(file=CONFIG_FILE, memory_config=false)
+			def load_config file=CONFIG_FILE, memory_config=false
 				if File.exists?(file) == true or memory_config == true
 					begin
 						if memory_config
@@ -75,7 +75,7 @@ module Kekkan
 			# Initiator for [ActiveRecord] migrations.
 			#
 			# @param direction [Symbol] :up or :down
-			def migrate(direction)
+			def migrate direction
 				begin
 					if @database["adapter"] == nil
 						return false, "[!] Invalid database adapter, please check your configuration file"
@@ -188,8 +188,8 @@ module Kekkan
 			def parse_options
 				begin
 					opts = OptionParser.new do |opt|
-						opt.banner =	"#{APP_NAME} v#{VERSION}\nJacob Hammack\n#{SITE}\n\n"
-						opt.banner << "Usage: #{APP_NAME} [options] [files_to_parse]"
+						opt.banner =	"#{Kekkan::APP_NAME} v#{Kekkan::VERSION}\nJacob Hammack\n#{Kekkan::SITE}\n\n"
+						opt.banner << "Usage: #{Kekkan::APP_NAME} [options] [files_to_parse]"
 
 						opt.separator('')
 						opt.separator('Configuration Options')
