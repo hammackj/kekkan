@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
 	s.description = "#{Kekkan::APP_NAME} is an SAX XML parser and database for NVD CVE and CPE XML files."
 	s.license = "MIT"
 
-	s.authors = Kekkan::AUTHOR
+	s.authors = Kekkan::AUTHORS
 	s.email = Kekkan::EMAIL
 
 	s.cert_chain  = ['certs/hammackj.pem']
