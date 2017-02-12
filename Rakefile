@@ -23,6 +23,7 @@ $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 require "kekkan/version"
 require 'rake'
 require 'rake/testtask'
+require 'digest/sha2'
 
 task :build do
 	system "gem build #{Kekkan::APP_NAME}.gemspec"
