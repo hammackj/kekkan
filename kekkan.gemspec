@@ -31,8 +31,11 @@ Gem::Specification.new do |s|
 	s.description = "#{Kekkan::APP_NAME} is an SAX XML parser and database for NVD CVE and CPE XML files."
 	s.license = "MIT"
 
-	s.author = Kekkan::AUTHOR
+	s.authors = Kekkan::AUTHOR
 	s.email = Kekkan::EMAIL
+
+	s.cert_chain  = ['certs/hammackj.pem']
+	s.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $0 =~ /gem\z/
 
 	s.files	= Dir['[A-Z]*'] + Dir['lib/**/*'] + ['kekkan.gemspec']
 	s.bindir = "bin"
