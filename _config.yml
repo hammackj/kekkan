@@ -1,0 +1,8 @@
+title: Kekkan
+description: Kekkan is a parser for NIST CVE and CPE files.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
