@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/arxopia/kekkan/badges/gpa.svg)](https://codeclimate.com/github/arxopia/kekkan)
 [![Inline docs](http://inch-ci.org/github/arxopia/kekkan.png)](http://inch-ci.org/github/arxopia/kekkan)
 
-Kekkan is a parser and [ActiveRecord](http://api.rubyonrails.org/classes/ActiveRecord/Base.html) database for NVD CVE and CPE XML files.
+Kekkan is a parser and [ActiveRecord](http://api.rubyonrails.org/classes/ActiveRecord/Base.html) database for [NVD](https://web.nvd.nist.gov) version 2.0 CVE and CPE XML files. The CVE feed can be found on the NVD [here](https://nvd.nist.gov/download.cfm#CVE_FEED).
 
 The name comes from the Japanese word for 'flaw/defect'.
 
@@ -48,12 +48,12 @@ The data can be queried with a built in console or with an external database vie
 	% kekkan --console
 
 # Contributing
-If you would like to contribute bug fixes/etc to Kekkan. The easiest way is to fork the project on [github](http://github.com/arxopia/kekkan) and make the changes in your fork and the submit a pull request to the project.
+If you would like to contribute bug fixes/etc to Kekkan. The easiest way is to fork the project on [github](http://github.com/hammackj/kekkan) and make the changes in your fork and the submit a pull request to the project.
 
 # Issues
-If you have any problems, bugs or feature requests please use the [github issue tracker](http://github.com/arxopia/kekkan/issues).
+If you have any problems, bugs or feature requests please use the [github issue tracker](http://github.com/hammackj/kekkan/issues).
 
 # Contact
-You can reach the team at kekkan[at]arxopia[dot]com.
+You can reach the team at jacob.hammack[at]hammackj[dot]com.
 
 You can also contact the team on IRC on irc.freenode.net, #risu
