@@ -1,4 +1,5 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby -W0
+
 # Copyright (c) 2012-2017 Jacob Hammack.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,7 +25,6 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '/../lib'))
 $stdout.sync = true
 $stderr.sync = true
 
-require 'rubygems'
 require 'kekkan'
 
 app = Kekkan::CLI::Application.new
